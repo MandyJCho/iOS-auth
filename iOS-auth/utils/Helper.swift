@@ -9,6 +9,11 @@
 import Foundation
 
 
-func findENVVAR(key: String) {
-    guard let path = Bundle.main().pathForResource("env)
+func findENVVAR(key: String) -> String {
+    guard let path = Bundle.main.path(forResource: "env", ofType: "plist") else { return "" }
+
+    
+    let envvars = NSDictionary(contentsOfFile: path)
+    
+    return envvars?.value(forKey: key) as! String
 }

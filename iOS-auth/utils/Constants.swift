@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct Endpoints {
+    struct TMDB {
+        static let baseURL = "https://api.themoviedb.org/3/movie"
+        static let apikey = findENVVAR(key: "TMDB_APIKEY")
+    }
+}

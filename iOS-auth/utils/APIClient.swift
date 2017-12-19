@@ -9,5 +9,13 @@
 import UIKit
 
 class APIClient: NSObject {
-
+    
+    func fetch(field: String) {
+        guard let url = URL("\(Endpoints.TMDB.baseURL)/\(field)?api_key=\(Endpoints.TMDB.apikey)") else { return }
+        
+        do {
+            
+        }
+        
+    }
 }

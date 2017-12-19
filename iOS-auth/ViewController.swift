@@ -8,10 +8,12 @@
 
 import UIKit
 
+//TODO: Incognito
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(findENVVAR(key: "POOL_ID"))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
