@@ -13,4 +13,8 @@ struct Endpoints {
         static let baseURL = "https://api.themoviedb.org/3/movie"
         static let apikey = findENVVAR(key: "TMDB_APIKEY")
     }
+    
+    struct PokeAPI {
+        static let baseURl = "https://pokeapi.co/api/v2/pokemon/"
+    }
 }

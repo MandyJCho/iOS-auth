@@ -10,12 +10,24 @@ import UIKit
 
 class APIClient: NSObject {
     
-    func fetch(field: String) {
-        guard let url = URL("\(Endpoints.TMDB.baseURL)/\(field)?api_key=\(Endpoints.TMDB.apikey)") else { return }
+    func get(field: String, done: @escaping ([NSDictionary?]) -> Void) {
+        guard let url = URL(string: "\(Endpoints.TMDB.baseURL)/\(field)?api_key=\(Endpoints.TMDB.apikey)") else { print("ERR"); return }
         
-        do {
-            
+        let task = URLSession.shared.dataTask(with: url) {(data, res, err) in
+            do {
+                if let data = data {
+                    if let response = try JSONSerialization.jsonObject(with: data, options: [.allowFragments]) as? NSDictionary {
+                        if let results = response.value(forKey: "results") as? [NSDictionary] {
+                            done(results)
+                        }
+                    }
+                }
+            } catch {
+                if let error = err {
+                    print(error.localizedDescription)
+                }
+            }
         }
-        
+        task.resume()
     }
 }
