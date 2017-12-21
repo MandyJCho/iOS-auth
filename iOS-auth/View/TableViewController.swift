@@ -1,5 +1,5 @@
 //
-//  PokemonViewController.swift
+//  TableViewController.swift
 //  iOS-auth
 //
 //  Created by Mandy Cho on 12/20/17.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class PokemonViewController: UIViewController {
-
+class TableViewController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

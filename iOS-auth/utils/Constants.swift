@@ -14,7 +14,7 @@ struct Endpoints {
         static let apikey = findENVVAR(key: "TMDB_APIKEY")
     }
     
-    struct PokeAPI {
-        static let baseURl = "https://pokeapi.co/api/v2/pokemon/"
+    struct SWAPI {
+        static let baseURL = "http https://swapi.co/api/people/"
     }
 }
