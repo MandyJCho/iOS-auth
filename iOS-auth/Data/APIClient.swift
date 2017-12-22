@@ -14,12 +14,12 @@ enum ErrorCode {
     case unknown
 }
 
-class DataAccessClient {
+class APIClient {
     let baseURL: URL
     
-    init() {
-        baseURL = URL(Endpoints.PokeAPI.baseURL)
+    init(baseURL: URL) {
+        self.baseURL = baseURL
     }
     
-    func getThatPokemon(id: Int, completion: @escaping (Pokemon, ))
+    func getByID(@escaping completion : ()
 }
