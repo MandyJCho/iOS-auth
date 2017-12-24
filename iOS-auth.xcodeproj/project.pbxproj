@@ -15,7 +15,6 @@
 		B052CA431FE8F0BC00102289 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA421FE8F0BC00102289 /* Constants.swift */; };
 		B052CA451FE8F2F700102289 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B052CA441FE8F2F600102289 /* Podfile */; };
 		B052CA571FEB32DD00102289 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA561FEB32DD00102289 /* TableViewController.swift */; };
-		B052CA5C1FEB671000102289 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA5B1FEB671000102289 /* APIClient.swift */; };
 		B052CA5E1FEB6C6600102289 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA5D1FEB6C6600102289 /* Character.swift */; };
 		B052CA601FEB7E8D00102289 /* CharacterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA5F1FEB7E8D00102289 /* CharacterCellViewModel.swift */; };
 		B08F93BF1FE5E8FA00B2FADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F93BE1FE5E8FA00B2FADD /* AppDelegate.swift */; };
@@ -58,7 +57,6 @@
 		B052CA421FE8F0BC00102289 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B052CA441FE8F2F600102289 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B052CA561FEB32DD00102289 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		B052CA5B1FEB671000102289 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		B052CA5D1FEB6C6600102289 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B052CA5F1FEB7E8D00102289 /* CharacterCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewModel.swift; sourceTree = "<group>"; };
 		B08F93BB1FE5E8FA00B2FADD /* iOS-auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +119,6 @@
 		B052CA371FE8ECB300102289 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				B052CA381FE8ECCA00102289 /* APIClient.swift */,
 				B052CA3A1FE8ECD600102289 /* Helper.swift */,
 				B052CA421FE8F0BC00102289 /* Constants.swift */,
 			);
@@ -161,12 +158,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		B052CA5A1FEB66F000102289 /* Data */ = {
+		B052CA5A1FEB66F000102289 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				B052CA5B1FEB671000102289 /* APIClient.swift */,
+				B052CA381FE8ECCA00102289 /* APIClient.swift */,
 			);
-			path = Data;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		B08F93B21FE5E8FA00B2FADD = {
@@ -196,7 +193,7 @@
 		B08F93BD1FE5E8FA00B2FADD /* iOS-auth */ = {
 			isa = PBXGroup;
 			children = (
-				B052CA5A1FEB66F000102289 /* Data */,
+				B052CA5A1FEB66F000102289 /* Services */,
 				B052CA4D1FEA39F000102289 /* View */,
 				B052CA4B1FEA39E400102289 /* ViewModel */,
 				B052CA461FEA2D8000102289 /* Model */,
@@ -533,7 +530,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B052CA431FE8F0BC00102289 /* Constants.swift in Sources */,
-				B052CA5C1FEB671000102289 /* APIClient.swift in Sources */,
 				B08F93BF1FE5E8FA00B2FADD /* AppDelegate.swift in Sources */,
 				B052CA571FEB32DD00102289 /* TableViewController.swift in Sources */,
 				B052CA601FEB7E8D00102289 /* CharacterCellViewModel.swift in Sources */,
