@@ -14,7 +14,7 @@ enum AccessError {
     case DataError(msg: String)
 }
 
-class APIClient: NSObject {
+class DataAccessClient: NSObject {
     typealias SWAPI = Endpoints.SWAPI
     
     func getRandomCharacter(completion: @escaping (Character?, AccessError?) -> Void) {
