@@ -11,32 +11,33 @@ import UIKit
 enum AccessError {
     case URLNotFound(msg: String)
     case RequestFailure(msg: String)
-    case
+    case DataError(msg: String)
 }
 
 class APIClient: NSObject {
     typealias SWAPI = Endpoints.SWAPI
     
-    func getRandomCharacter(@escaping completion: (Character, AccessError) -> Void) {
+    func getRandomCharacter(completion: @escaping (Character?, AccessError?) -> Void) {
         // Validate endpoint URL
-        let endpoint = SWAPI.baseURL + SWAPI.id
+        let endpoint = SWAPI.baseURL + SWAPI.id.description
         guard let url = URL(string: endpoint)
-            else {
-                completion(_, AccessError.URLNotFound(msg: "Invalide URL: \(endpoint)"))
-                return
-            }
+        else {
+            completion(nil, AccessError.URLNotFound(msg: "Invalide URL: \(endpoint)"))
+            return
+        }
         
         // Create and run request
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             do {
-                if let responseJSON = try JSONDecoder.decode(Character.self, from: data) {
-                    completion(responseJSON, _))
+                if let json = data {
+                    let responseJSON = try JSONDecoder().decode(Character.self, from: json)
+                    completion(responseJSON, nil)
                 }
             } catch {
-                if error == nil {
-                    completion(_, AccessError.RequestFailure(msg: "Error: \(error)")
-                }
+                completion(nil, AccessError.RequestFailure(msg: "Error: \(error)"))
             }
         }
+        
+        task.resume()
     }
 }

@@ -16,8 +16,8 @@ struct Endpoints {
     
     struct SWAPI {
         static let baseURL = "http https://swapi.co/api/people/"
-        static let MAX = 82
-        private static var id: Int {
+        private static let MAX = 82
+        static var id: Int {
             get {
                 return Int(arc4random_uniform(UInt32(MAX)))
             }
