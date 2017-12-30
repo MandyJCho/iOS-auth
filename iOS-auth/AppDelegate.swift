@@ -10,20 +10,21 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    // TODO: Found out how to include storyboard views, most likely an identifier
     var window: UIWindow?
+    var appCoordinator: AppCoordinator?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow()
-        let root = UINavigationController(rootViewController: HomeViewController())
+//        window?.rootViewController = UINavigationController()
+//
+//        appCoordinator = AppCoordinator(with: window?.rootViewController as! UINavigationController)
+//        appCoordinator?.start()
+//
+//        window?.makeKeyAndVisible()
 
-        window?.rootViewController = root
-        window?.makeKeyAndVisible()
-        
-        
-        
         return true
     }
 

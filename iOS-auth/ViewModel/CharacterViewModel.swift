@@ -8,8 +8,12 @@
 
 import Foundation
 
+protocol CharacterVMType {
+    
+}
+
 class CharacterViewModel : NSObject {
-    var character: Character?
+    private var character: Character? = nil
     var height : (Int, Int) {
         get {
             if let person = character {
@@ -24,21 +28,28 @@ class CharacterViewModel : NSObject {
     
     init(client dataAccessClient: DataAccessClient) {
         self.dataAccessClient = dataAccessClient
-        dataAccessClient.getRandomCharacter() { (character, error) in
-            if let error = error {
-                print(error)
+        super.init()
+        dataAccessClient.getRandomCharacter { [weak self] (character, error) in
+            if error != nil {
+                print(error!)
                 return
             }
             
-            
-            guard let character = character
-            else {
+            if character != nil {
+                self?.character = character
+            } else {
                 print("Error: Character is nil")
                 return
             }
-            
-            self.character = character
         }
+    }
+    
+    func numberOfAttributesToDisplay(in section: Int) -> Int {
+        return character != nil ? 14 : 0
+    }
+    
+    func tableTitle() -> String {
+        return character?.name ?? "No name"
     }
     
 }

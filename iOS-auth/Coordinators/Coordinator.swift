@@ -10,16 +10,14 @@ import Foundation
 import UIKit
 
 class Coordinator {
-    let children: [Coordinator]
+    var children: [Coordinator] = [Coordinator]()
     weak var navigationController: UINavigationController?
     
     init(with navigationController: UINavigationController?) {
         self.navigationController = navigationController
     }
     
-    func start(_ viewcontroller: UIViewController) {
-        navigationController?.pushViewController(viewcontroller, animated: true)
-    }
+    func start() {}
     
 }
 

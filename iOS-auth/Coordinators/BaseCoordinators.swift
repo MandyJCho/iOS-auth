@@ -10,26 +10,17 @@ import Foundation
 import UIKit
 
 class AppCoordinator: Coordinator {
-    var doSkipHome = false
-    
     override func start() {
-        let coordinator = doSkipHome ? HomeCoordinator() : CharacterTableCoordinator()
+        let coordinator:Coordinator = HomeCoordinator(with: navigationController)
         coordinator.start()
         children.append(coordinator)
     }
-    
 }
 
 class HomeCoordinator : Coordinator {
     override func start() {
         let viewcontroller = HomeViewController()
-        super.start(viewcontroller)
+        navigationController?.pushViewController(viewcontroller, animated: true)
     }
 }
 
-class CharacterTableCoordinator : Coordinator {
-    override func start() {
-        let viewcontroller = CharacterViewController()
-        super.start(viewcontroller)
-    }
-}
