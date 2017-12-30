@@ -8,7 +8,8 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class CharacterViewController: UITableViewController {
+    var character: CharacterViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()

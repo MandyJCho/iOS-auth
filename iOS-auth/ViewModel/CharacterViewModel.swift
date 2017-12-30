@@ -9,8 +9,26 @@
 import Foundation
 
 class CharacterViewModel : NSObject {
-    let character: Character
+    var character: Character?
+    var height : (Int, Int) {
+        get {
+            if let person = character {
+                return (Int((person.height * 0.393701) / 12), (Int(person.height * 0.393701) % 12))
+            }
+            return (0, 0)
+        }
+    }
     
     // DI of client from storyboard
-    @IBOutlet dataAccessClient: DataAccessClient!
+    let dataAccessClient: DataAccessClient!
+    
+    init(client dataAccessClient: DataAccessClient, character: Character?) {
+        self.dataAccessClient = dataAccessClient
+        self.character = character
+    }
+    
+    convenience init(dataAccessClient: DataAccessClient) {
+        self.init(client: dataAccessClient, character: nil)
+    }
+
 }
