@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+class Coordinator {
+    let child: [Coordinator]
+    weak var navigationController: UINavigationController?
+    
+    init(with navigationController: UINavigationController?) {
+        self.navigationController = navigationController
+    }
+}

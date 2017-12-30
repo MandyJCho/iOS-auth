@@ -10,7 +10,7 @@ import Foundation
 
 struct Character {
     let name: String
-    let height: Int
+    let height: Double
     let mass: Int
     let hairColor: String
     let skinColor: String
@@ -28,7 +28,7 @@ struct Character {
     
     init(_ formatted: [String: Any]) {
         self.name = formatted["name"] as! String
-        self.height = formatted["height"] as! Int
+        self.height = formatted["height"] as! Double
         self.mass = formatted["mass"] as! Int
         self.hairColor = formatted["hairColor"] as! String
         self.skinColor = formatted["skinColor"] as! String
