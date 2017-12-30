@@ -25,7 +25,7 @@
 		B08F93DF1FE5E8FA00B2FADD /* iOS_authUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F93DE1FE5E8FA00B2FADD /* iOS_authUITests.swift */; };
 		B0CCB4581FF3137E00F3569F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB4571FF3137E00F3569F /* HomeViewController.swift */; };
 		B0CCB45B1FF4369C00F3569F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45A1FF4369C00F3569F /* Coordinator.swift */; };
-		B0CCB45D1FF73A4800F3569F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45C1FF73A4800F3569F /* AppCoordinator.swift */; };
+		B0CCB45D1FF73A4800F3569F /* BaseCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45C1FF73A4800F3569F /* BaseCoordinators.swift */; };
 		FACF178082B89A263429DA1F /* Pods_iOS_authTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC39362E17D81D2909F9846 /* Pods_iOS_authTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +76,7 @@
 		B08F93E01FE5E8FA00B2FADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0CCB4571FF3137E00F3569F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0CCB45A1FF4369C00F3569F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		B0CCB45C1FF73A4800F3569F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B0CCB45C1FF73A4800F3569F /* BaseCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinators.swift; sourceTree = "<group>"; };
 		B1A24121D63A65143D6B9649 /* Pods-iOS-auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-auth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-auth/Pods-iOS-auth.debug.xcconfig"; sourceTree = "<group>"; };
 		D698F6B628FA16D0D398E8E6 /* Pods-iOS-authUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-authUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-authUITests/Pods-iOS-authUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,7 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				B0CCB45A1FF4369C00F3569F /* Coordinator.swift */,
-				B0CCB45C1FF73A4800F3569F /* AppCoordinator.swift */,
+				B0CCB45C1FF73A4800F3569F /* BaseCoordinators.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -548,7 +548,7 @@
 			files = (
 				B052CA431FE8F0BC00102289 /* Constants.swift in Sources */,
 				B08F93BF1FE5E8FA00B2FADD /* AppDelegate.swift in Sources */,
-				B0CCB45D1FF73A4800F3569F /* AppCoordinator.swift in Sources */,
+				B0CCB45D1FF73A4800F3569F /* BaseCoordinators.swift in Sources */,
 				B0CCB4581FF3137E00F3569F /* HomeViewController.swift in Sources */,
 				B052CA571FEB32DD00102289 /* CharacterViewController.swift in Sources */,
 				B052CA601FEB7E8D00102289 /* CharacterViewModel.swift in Sources */,

@@ -9,7 +9,9 @@
 import UIKit
 
 class CharacterViewController: UITableViewController {
-    var character: CharacterViewController
+    var character: CharacterViewModel
+    
+    init()
     
     override func viewDidLoad() {
         super.viewDidLoad()

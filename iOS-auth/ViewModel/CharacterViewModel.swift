@@ -22,13 +22,23 @@ class CharacterViewModel : NSObject {
     // DI of client from storyboard
     let dataAccessClient: DataAccessClient!
     
-    init(client dataAccessClient: DataAccessClient, character: Character?) {
+    init(client dataAccessClient: DataAccessClient) {
         self.dataAccessClient = dataAccessClient
-        self.character = character
+        dataAccessClient.getRandomCharacter() { (character, error) in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            
+            guard let character = character
+            else {
+                print("Error: Character is nil")
+                return
+            }
+            
+            self.character = character
+        }
     }
     
-    convenience init(dataAccessClient: DataAccessClient) {
-        self.init(client: dataAccessClient, character: nil)
-    }
-
 }
