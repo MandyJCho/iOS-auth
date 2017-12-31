@@ -12,8 +12,16 @@ import UIKit
 class HomeViewController: UIViewController {
     weak var delegate: HomeViewControllerDelegate?
     
+    init(nibName: String, bundle: Bundle?) {
+        super.init(nibName: nibName, bundle: bundle)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
+        print("home")
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -23,11 +31,11 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func onButtonCLick(sender: AnyObject) {
-        print("click")
+
+    @IBAction func onViewCharacter(_ sender: Any) {
+        print("did click")
+        delegate?.showCharacterTable()
     }
-    
     /*
      // MARK: - Navigation
      

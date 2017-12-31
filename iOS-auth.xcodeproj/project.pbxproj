@@ -20,13 +20,13 @@
 		B07B320A1FF82F360029425F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32081FF82F360029425F /* HomeViewController.swift */; };
 		B07B32101FF8928B0029425F /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B320F1FF8928B0029425F /* HomeCoordinator.swift */; };
 		B08F93BF1FE5E8FA00B2FADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F93BE1FE5E8FA00B2FADD /* AppDelegate.swift */; };
-		B08F93C41FE5E8FA00B2FADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F93C21FE5E8FA00B2FADD /* Main.storyboard */; };
 		B08F93C61FE5E8FA00B2FADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F93C51FE5E8FA00B2FADD /* Assets.xcassets */; };
 		B08F93C91FE5E8FA00B2FADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F93C71FE5E8FA00B2FADD /* LaunchScreen.storyboard */; };
 		B08F93D41FE5E8FA00B2FADD /* iOS_authTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F93D31FE5E8FA00B2FADD /* iOS_authTests.swift */; };
 		B08F93DF1FE5E8FA00B2FADD /* iOS_authUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F93DE1FE5E8FA00B2FADD /* iOS_authUITests.swift */; };
 		B0CCB45B1FF4369C00F3569F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45A1FF4369C00F3569F /* Coordinator.swift */; };
 		B0CCB45D1FF73A4800F3569F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45C1FF73A4800F3569F /* AppCoordinator.swift */; };
+		B0F916311FF8AA5D003624E8 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07B32091FF82F360029425F /* Home.xib */; };
 		FACF178082B89A263429DA1F /* Pods_iOS_authTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC39362E17D81D2909F9846 /* Pods_iOS_authTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +68,6 @@
 		B07B320F1FF8928B0029425F /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		B08F93BB1FE5E8FA00B2FADD /* iOS-auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F93BE1FE5E8FA00B2FADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B08F93C31FE5E8FA00B2FADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B08F93C51FE5E8FA00B2FADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B08F93C81FE5E8FA00B2FADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B08F93CA1FE5E8FA00B2FADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,7 +162,6 @@
 			children = (
 				B07B32081FF82F360029425F /* HomeViewController.swift */,
 				B07B32091FF82F360029425F /* Home.xib */,
-				B08F93C21FE5E8FA00B2FADD /* Main.storyboard */,
 				B052CA561FEB32DD00102289 /* CharacterViewController.swift */,
 			);
 			path = View;
@@ -372,11 +370,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F916311FF8AA5D003624E8 /* Home.xib in Resources */,
 				B052CA451FE8F2F700102289 /* Podfile in Resources */,
 				B052CA411FE8EE9100102289 /* env.plist in Resources */,
 				B08F93C91FE5E8FA00B2FADD /* LaunchScreen.storyboard in Resources */,
 				B08F93C61FE5E8FA00B2FADD /* Assets.xcassets in Resources */,
-				B08F93C41FE5E8FA00B2FADD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,14 +595,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B08F93C21FE5E8FA00B2FADD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B08F93C31FE5E8FA00B2FADD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B08F93C71FE5E8FA00B2FADD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

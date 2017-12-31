@@ -9,21 +9,28 @@
 import UIKit
 import Foundation
 
-protocol HomeViewControllerDelegate {
-    func didSelectCharacter() {}
+protocol HomeViewControllerDelegate:class {
+    func showCharacterTable()
 }
 
 class HomeCoordinator: Coordinator {
     init(with navigationController: UINavigationController) {
-        super.init(navigationController)
+        super.init(with: navigationController)
     }
     
     override func start() {
         showHome()
     }
     
-    func showHome(){
-        let homeViewController = HomeViewController()
-        homeViewController.delegate
+    func showHome() {
+        let homeViewController = HomeViewController(nibName: "Home", bundle: nil)
+        homeViewController.delegate = self
+        navigationController?.pushViewController(homeViewController, animated: true)
+    }
+}
+
+extension HomeCoordinator: HomeViewControllerDelegate {
+    func showCharacterTable() {
+        print("delegate here")
     }
 }

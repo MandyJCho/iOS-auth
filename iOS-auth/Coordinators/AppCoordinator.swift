@@ -19,8 +19,7 @@ class AppCoordinator: Coordinator {
     }
     
     func showHome(){
-        let coordinator = HomeCoordinator(with: navigationController)
-        coordinator.delegate = self
+        let coordinator = HomeCoordinator(with: navigationController!)
         coordinator.start()
         children.append(coordinator)
     }
