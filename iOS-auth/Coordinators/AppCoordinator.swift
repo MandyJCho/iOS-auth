@@ -10,19 +10,18 @@ import Foundation
 import UIKit
 
 class AppCoordinator: Coordinator {
+    init(with navigationController: UINavigationController) {
+        super.init(with: navigationController)
+    }
+    
     override func start() {
+        showHome()
+    }
+    
+    func showHome(){
         let coordinator = HomeCoordinator(with: navigationController)
         coordinator.delegate = self
         coordinator.start()
         children.append(coordinator)
     }
 }
-
-class HomeCoordinator : Coordinator {
-    weak var delegate: HomeCoordinatorDelegate
-    override func start() {
-        let viewcontroller = HomeViewController()
-        navigationController?.pushViewController(viewcontroller, animated: true)
-    }
-}
-

@@ -17,15 +17,16 @@
 		B052CA571FEB32DD00102289 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA561FEB32DD00102289 /* CharacterViewController.swift */; };
 		B052CA5E1FEB6C6600102289 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA5D1FEB6C6600102289 /* Character.swift */; };
 		B052CA601FEB7E8D00102289 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA5F1FEB7E8D00102289 /* CharacterViewModel.swift */; };
+		B07B320A1FF82F360029425F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32081FF82F360029425F /* HomeViewController.swift */; };
+		B07B32101FF8928B0029425F /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B320F1FF8928B0029425F /* HomeCoordinator.swift */; };
 		B08F93BF1FE5E8FA00B2FADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F93BE1FE5E8FA00B2FADD /* AppDelegate.swift */; };
 		B08F93C41FE5E8FA00B2FADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F93C21FE5E8FA00B2FADD /* Main.storyboard */; };
 		B08F93C61FE5E8FA00B2FADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F93C51FE5E8FA00B2FADD /* Assets.xcassets */; };
 		B08F93C91FE5E8FA00B2FADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F93C71FE5E8FA00B2FADD /* LaunchScreen.storyboard */; };
 		B08F93D41FE5E8FA00B2FADD /* iOS_authTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F93D31FE5E8FA00B2FADD /* iOS_authTests.swift */; };
 		B08F93DF1FE5E8FA00B2FADD /* iOS_authUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F93DE1FE5E8FA00B2FADD /* iOS_authUITests.swift */; };
-		B0CCB4581FF3137E00F3569F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB4571FF3137E00F3569F /* HomeViewController.swift */; };
 		B0CCB45B1FF4369C00F3569F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45A1FF4369C00F3569F /* Coordinator.swift */; };
-		B0CCB45D1FF73A4800F3569F /* BaseCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45C1FF73A4800F3569F /* BaseCoordinators.swift */; };
+		B0CCB45D1FF73A4800F3569F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45C1FF73A4800F3569F /* AppCoordinator.swift */; };
 		FACF178082B89A263429DA1F /* Pods_iOS_authTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC39362E17D81D2909F9846 /* Pods_iOS_authTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,9 @@
 		B052CA561FEB32DD00102289 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		B052CA5D1FEB6C6600102289 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B052CA5F1FEB7E8D00102289 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		B07B32081FF82F360029425F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "/Users/Mandy_Cho/Projects/iOS-auth/iOS-auth/View/HomeViewController.swift"; sourceTree = "<absolute>"; };
+		B07B32091FF82F360029425F /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Home.xib; path = "/Users/Mandy_Cho/Projects/iOS-auth/iOS-auth/View/Home.xib"; sourceTree = "<absolute>"; };
+		B07B320F1FF8928B0029425F /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		B08F93BB1FE5E8FA00B2FADD /* iOS-auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F93BE1FE5E8FA00B2FADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B08F93C31FE5E8FA00B2FADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,9 +78,8 @@
 		B08F93DA1FE5E8FA00B2FADD /* iOS-authUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-authUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F93DE1FE5E8FA00B2FADD /* iOS_authUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_authUITests.swift; sourceTree = "<group>"; };
 		B08F93E01FE5E8FA00B2FADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0CCB4571FF3137E00F3569F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B0CCB45A1FF4369C00F3569F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		B0CCB45C1FF73A4800F3569F /* BaseCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinators.swift; sourceTree = "<group>"; };
+		B0CCB45C1FF73A4800F3569F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		B1A24121D63A65143D6B9649 /* Pods-iOS-auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-auth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-auth/Pods-iOS-auth.debug.xcconfig"; sourceTree = "<group>"; };
 		D698F6B628FA16D0D398E8E6 /* Pods-iOS-authUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-authUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-authUITests/Pods-iOS-authUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,9 +161,10 @@
 		B052CA4D1FEA39F000102289 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B07B32081FF82F360029425F /* HomeViewController.swift */,
+				B07B32091FF82F360029425F /* Home.xib */,
 				B08F93C21FE5E8FA00B2FADD /* Main.storyboard */,
 				B052CA561FEB32DD00102289 /* CharacterViewController.swift */,
-				B0CCB4571FF3137E00F3569F /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,7 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				B0CCB45A1FF4369C00F3569F /* Coordinator.swift */,
-				B0CCB45C1FF73A4800F3569F /* BaseCoordinators.swift */,
+				B0CCB45C1FF73A4800F3569F /* AppCoordinator.swift */,
+				B07B320F1FF8928B0029425F /* HomeCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -548,13 +553,14 @@
 			files = (
 				B052CA431FE8F0BC00102289 /* Constants.swift in Sources */,
 				B08F93BF1FE5E8FA00B2FADD /* AppDelegate.swift in Sources */,
-				B0CCB45D1FF73A4800F3569F /* BaseCoordinators.swift in Sources */,
-				B0CCB4581FF3137E00F3569F /* HomeViewController.swift in Sources */,
+				B0CCB45D1FF73A4800F3569F /* AppCoordinator.swift in Sources */,
 				B052CA571FEB32DD00102289 /* CharacterViewController.swift in Sources */,
 				B052CA601FEB7E8D00102289 /* CharacterViewModel.swift in Sources */,
+				B07B320A1FF82F360029425F /* HomeViewController.swift in Sources */,
 				B052CA391FE8ECCA00102289 /* DataAccessClient.swift in Sources */,
 				B052CA3B1FE8ECD600102289 /* Helper.swift in Sources */,
 				B052CA5E1FEB6C6600102289 /* Character.swift in Sources */,
+				B07B32101FF8928B0029425F /* HomeCoordinator.swift in Sources */,
 				B0CCB45B1FF4369C00F3569F /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
