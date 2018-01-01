@@ -14,7 +14,6 @@
 		B052CA411FE8EE9100102289 /* env.plist in Resources */ = {isa = PBXBuildFile; fileRef = B052CA401FE8EE9000102289 /* env.plist */; };
 		B052CA431FE8F0BC00102289 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA421FE8F0BC00102289 /* Constants.swift */; };
 		B052CA451FE8F2F700102289 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B052CA441FE8F2F600102289 /* Podfile */; };
-		B052CA571FEB32DD00102289 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA561FEB32DD00102289 /* CharacterViewController.swift */; };
 		B052CA5E1FEB6C6600102289 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA5D1FEB6C6600102289 /* Character.swift */; };
 		B052CA601FEB7E8D00102289 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052CA5F1FEB7E8D00102289 /* CharacterViewModel.swift */; };
 		B07B320A1FF82F360029425F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32081FF82F360029425F /* HomeViewController.swift */; };
@@ -26,6 +25,8 @@
 		B08F93DF1FE5E8FA00B2FADD /* iOS_authUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F93DE1FE5E8FA00B2FADD /* iOS_authUITests.swift */; };
 		B0CCB45B1FF4369C00F3569F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45A1FF4369C00F3569F /* Coordinator.swift */; };
 		B0CCB45D1FF73A4800F3569F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCB45C1FF73A4800F3569F /* AppCoordinator.swift */; };
+		B0EEE8E91FF9F8C70076C2BB /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EEE8E71FF9F8C70076C2BB /* CharacterTableViewController.swift */; };
+		B0EEE8EA1FF9F8C70076C2BB /* CharacterTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EEE8E81FF9F8C70076C2BB /* CharacterTableViewController.xib */; };
 		B0F916311FF8AA5D003624E8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07B32091FF82F360029425F /* HomeViewController.xib */; };
 		FACF178082B89A263429DA1F /* Pods_iOS_authTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC39362E17D81D2909F9846 /* Pods_iOS_authTests.framework */; };
 /* End PBXBuildFile section */
@@ -60,7 +61,6 @@
 		B052CA401FE8EE9000102289 /* env.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = env.plist; sourceTree = "<group>"; };
 		B052CA421FE8F0BC00102289 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B052CA441FE8F2F600102289 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B052CA561FEB32DD00102289 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		B052CA5D1FEB6C6600102289 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B052CA5F1FEB7E8D00102289 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		B07B32081FF82F360029425F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "/Users/Mandy_Cho/Projects/iOS-auth/iOS-auth/View/HomeViewController.swift"; sourceTree = "<absolute>"; };
@@ -79,6 +79,8 @@
 		B08F93E01FE5E8FA00B2FADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0CCB45A1FF4369C00F3569F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B0CCB45C1FF73A4800F3569F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B0EEE8E71FF9F8C70076C2BB /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
+		B0EEE8E81FF9F8C70076C2BB /* CharacterTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewController.xib; sourceTree = "<group>"; };
 		B1A24121D63A65143D6B9649 /* Pods-iOS-auth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-auth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-auth/Pods-iOS-auth.debug.xcconfig"; sourceTree = "<group>"; };
 		D698F6B628FA16D0D398E8E6 /* Pods-iOS-authUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-authUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-authUITests/Pods-iOS-authUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,7 +164,8 @@
 			children = (
 				B07B32081FF82F360029425F /* HomeViewController.swift */,
 				B07B32091FF82F360029425F /* HomeViewController.xib */,
-				B052CA561FEB32DD00102289 /* CharacterViewController.swift */,
+				B0EEE8E71FF9F8C70076C2BB /* CharacterTableViewController.swift */,
+				B0EEE8E81FF9F8C70076C2BB /* CharacterTableViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			files = (
 				B0F916311FF8AA5D003624E8 /* HomeViewController.xib in Resources */,
 				B052CA451FE8F2F700102289 /* Podfile in Resources */,
+				B0EEE8EA1FF9F8C70076C2BB /* CharacterTableViewController.xib in Resources */,
 				B052CA411FE8EE9100102289 /* env.plist in Resources */,
 				B08F93C91FE5E8FA00B2FADD /* LaunchScreen.storyboard in Resources */,
 				B08F93C61FE5E8FA00B2FADD /* Assets.xcassets in Resources */,
@@ -552,8 +556,8 @@
 				B052CA431FE8F0BC00102289 /* Constants.swift in Sources */,
 				B08F93BF1FE5E8FA00B2FADD /* AppDelegate.swift in Sources */,
 				B0CCB45D1FF73A4800F3569F /* AppCoordinator.swift in Sources */,
-				B052CA571FEB32DD00102289 /* CharacterViewController.swift in Sources */,
 				B052CA601FEB7E8D00102289 /* CharacterViewModel.swift in Sources */,
+				B0EEE8E91FF9F8C70076C2BB /* CharacterTableViewController.swift in Sources */,
 				B07B320A1FF82F360029425F /* HomeViewController.swift in Sources */,
 				B052CA391FE8ECCA00102289 /* DataAccessClient.swift in Sources */,
 				B052CA3B1FE8ECD600102289 /* Helper.swift in Sources */,

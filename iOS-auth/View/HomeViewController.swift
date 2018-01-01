@@ -25,7 +25,6 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func onViewCharacter(_ sender: Any) {
-        print("did click")
         delegate?.showCharacterTable()
     }
     /*

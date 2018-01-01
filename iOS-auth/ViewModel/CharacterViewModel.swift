@@ -7,23 +7,22 @@
 //
 
 import Foundation
-
-protocol CharacterVMType {
-    
-}
+import UIKit
 
 class CharacterViewModel : NSObject {
     private var character: Character? = nil
-    var height : (Int, Int) {
+    var height : String {
         get {
             if let person = character {
-                return (Int((person.height * 0.393701) / 12), (Int(person.height * 0.393701) % 12))
-            }
-            return (0, 0)
+                return "\(Int((person.height * 0.393701) / 12))ft \((Int(person.height * 0.393701) % 12))in"
+            } else { return "Unknown height" }
         }
     }
     
+    
     // DI of client from storyboard
+    // TODO: Remove network call from init and into fetch method
+    // MAYBE: Use and rx library
     let dataAccessClient: DataAccessClient!
     
     init(client dataAccessClient: DataAccessClient) {
