@@ -23,7 +23,7 @@ class HomeCoordinator: Coordinator {
     }
     
     func showHome() {
-        let homeViewController = HomeViewController(nibName: "Home", bundle: nil)
+        let homeViewController = HomeViewController()
         homeViewController.delegate = self
         navigationController?.pushViewController(homeViewController, animated: true)
     }

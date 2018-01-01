@@ -12,14 +12,6 @@ import UIKit
 class HomeViewController: UIViewController {
     weak var delegate: HomeViewControllerDelegate?
     
-    init(nibName: String, bundle: Bundle?) {
-        super.init(nibName: nibName, bundle: bundle)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         print("home")
         super.viewDidLoad()
