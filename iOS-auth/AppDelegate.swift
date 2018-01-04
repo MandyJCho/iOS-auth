@@ -10,7 +10,6 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    // TODO: Found out how to include storyboard views, most likely an identifier
     var window: UIWindow?
     var appCoordinator: AppCoordinator?
 

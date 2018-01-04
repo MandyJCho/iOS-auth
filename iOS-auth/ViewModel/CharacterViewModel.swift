@@ -18,37 +18,37 @@ class CharacterViewModel : NSObject {
             } else { return "Unknown height" }
         }
     }
+
     
-    
+    // TODO: Remove network call from "init" and into fetch method
     // DI of client from storyboard
-    // TODO: Remove network call from init and into fetch method
     // MAYBE: Use and rx library
     let dataAccessClient: DataAccessClient!
     
     init(client dataAccessClient: DataAccessClient) {
         self.dataAccessClient = dataAccessClient
-        super.init()
-        dataAccessClient.getRandomCharacter { [weak self] (character, error) in
-            if error != nil {
-                print(error!)
-                return
-            }
-            
-            if character != nil {
-                self?.character = character
-            } else {
-                print("Error: Character is nil")
-                return
-            }
-        }
+//        super.init()
+//        dataAccessClient.getRandomCharacter { [weak self] (character, error) in
+//            if error != nil {
+//                print(error!)
+//                return
+//            }
+//
+//            if character != nil {
+//                self?.character = character
+//            } else {
+//                print("Error: Character is nil")
+//                return
+//            }
+//        }
     }
-    
-    func numberOfAttributesToDisplay(in section: Int) -> Int {
-        return character != nil ? 14 : 0
-    }
-    
-    func tableTitle() -> String {
-        return character?.name ?? "No name"
-    }
-    
+
+//    func numberOfAttributesToDisplay(in section: Int) -> Int {
+//        return character != nil ? 14 : 0
+//    }
+//
+//    func tableTitle() -> String {
+//        return character?.name ?? "No name"
+//    }
+
 }

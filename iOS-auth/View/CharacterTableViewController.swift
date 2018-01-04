@@ -9,6 +9,7 @@
 import UIKit
 
 class CharacterTableViewController: UITableViewController {
+    weak var delegate : CharacterTableVCDelegate?
     var characterViewModel: CharacterViewModel
     
     init(viewModel characterViewModel: CharacterViewModel) {

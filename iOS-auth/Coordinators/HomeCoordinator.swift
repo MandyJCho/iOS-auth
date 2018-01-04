@@ -9,8 +9,12 @@
 import UIKit
 import Foundation
 
-protocol HomeViewControllerDelegate:class {
+protocol HomeVCDelegate:class {
     func showCharacterTable()
+}
+
+protocol CharacterTableVCDelegate:class {
+    
 }
 
 class HomeCoordinator: Coordinator {
@@ -29,8 +33,15 @@ class HomeCoordinator: Coordinator {
     }
 }
 
-extension HomeCoordinator: HomeViewControllerDelegate {
+extension HomeCoordinator: HomeVCDelegate {
     func showCharacterTable() {
-        print("delegate here")
+        let characterViewModel = CharacterViewModel(client: DataAccessClient())
+        let characterTableViewController = CharacterTableViewController(viewModel: characterViewModel)
+        characterTableViewController.delegate = self
+        navigationController?.pushViewController(characterTableViewController, animated: true)
     }
+}
+
+extension HomeCoordinator: CharacterTableVCDelegate {
+    
 }

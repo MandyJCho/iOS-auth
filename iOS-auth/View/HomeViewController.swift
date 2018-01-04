@@ -10,10 +10,9 @@ import UIKit
 
 
 class HomeViewController: UIViewController {
-    weak var delegate: HomeViewControllerDelegate?
+    weak var delegate: HomeVCDelegate?
     
     override func viewDidLoad() {
-        print("home")
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
