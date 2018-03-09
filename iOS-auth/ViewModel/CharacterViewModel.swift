@@ -27,28 +27,28 @@ class CharacterViewModel : NSObject {
     
     init(client dataAccessClient: DataAccessClient) {
         self.dataAccessClient = dataAccessClient
-//        super.init()
-//        dataAccessClient.getRandomCharacter { [weak self] (character, error) in
-//            if error != nil {
-//                print(error!)
-//                return
-//            }
-//
-//            if character != nil {
-//                self?.character = character
-//            } else {
-//                print("Error: Character is nil")
-//                return
-//            }
-//        }
+       super.init()
+       dataAccessClient.getRandomCharacter { [weak self] (character, error) in
+           if error != nil {
+               print(error!)
+               return
+           }
+
+           if character != nil {
+               self?.character = character
+           } else {
+               print("Error: Character is nil")
+               return
+           }
+       }
     }
 
-//    func numberOfAttributesToDisplay(in section: Int) -> Int {
-//        return character != nil ? 14 : 0
-//    }
-//
-//    func tableTitle() -> String {
-//        return character?.name ?? "No name"
-//    }
+   func numberOfAttributesToDisplay(in section: Int) -> Int {
+       return character != nil ? 14 : 0
+   }
+
+   func tableTitle() -> String {
+       return character?.name ?? "No name"
+   }
 
 }
